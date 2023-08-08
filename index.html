@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Management System | T3ch Hefty</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- top-bar -->
+      <div class="top-bar">
+        <span><b>Inventory Management</b></span>
+        <p><b>welcome admin | Log out</b></p>
+      </div>
+      <!-- top-bar -->
+      <div class="inner-container">
+        <aside class="side-bar">
+          <ul>
+            <li id="dash-board">Dashboard</li>
+            <li id="items">Products</li>
+            <li id="purchase">Purchase</li>
+            <!-- <li>Vendor</li> -->
+            <li id="sales">Sales</li>
+            <!-- <li>Customer</li> -->
+            <!-- <li>Search</li> -->
+            <li id="reports">Reports</li>
+          </ul>
+        </aside>
+        <section class="detail-section">
+          <div class="main-section-header">
+            <p>T3chHefty Stores</p>
+          </div>
+
+          <div class="tab-marker">
+            <p id="item-marker">Dashboard</p>
+          </div>
+          <div class="main-tab-details">
+            <!-- this is the main tab section -->
+            <form action="form" class="form">
+              <div class="item-number-product-Id-container">
+                <div>
+                  <label for="item-number"
+                    >Item Number<b class="required">*</b></label
+                  >
+                  <br />
+                  <input type="number" name="" id="item-number" required placeholder="Enter Item Number" />
+                </div>
+                <div>
+                  <label for="product-Id">Product ID</label> <br />
+                  <input type="number" name="" id="product-Id" disabled />
+                </div>
+              </div>
+              <br />
+
+              <div class="item-name-container">
+                <label for="item-name"
+                  >Item Name <b class="required">*</b></label
+                >
+                <div style="display: flex; align-items: center">
+                  <input type="text" name="" id="item-name" required  placeholder="Enter Item Name" required />
+                  <select name="" id="" class="select">
+                    <option value="">Active</option>
+                    <option value="">inactive</option>
+                    <option value="">Disabled</option>
+                  </select>
+                </div>
+              </div>
+              <textarea name="" id="" cols="89" rows="10">Description</textarea>
+
+              <div class="stocks">
+                <div class="discount">
+                  <label for="discount">Discount(Dc) % </label> <br>
+                  <input type="number" name="" id="discount" />
+                </div>
+            
+                  <div class="Quantity">
+                    <label for="qty">Quantity(Qty)<b class="required">*</b> </label> <br>
+                    <input type="number" name="" id="qty" />
+                  </div>
+
+                  <div class="unit-price">
+                    <label for="unit-price"
+                      >Unit Price (UP) <b class="required">*</b>
+                    </label> <br>
+                    <input type="number" name="" id="unit-price" />
+                  </div>
+                  <div class="total-stock">
+                    <label for="total-stock">Total Stock (TS)</label> <br>
+                    <input type="number" name="" id="total-stock" disabled />
+                    <input type="submit" value="Add Item">
+                  </div>
+              
+              </div> 
+               
+            </form>
+            <!-- this is the main tab section ending -->
+          </div>
+
+          <div class="dashboard-container">
+            <div class="inner-dashboard-container">
+              <div class="green">Total Sales <b">🛒</b></div>
+              <div class="red">Total Sales Amount 👜</div>
+              <div class="orange">Total Items 🛒</div>
+              <div class="green">Total Products 🧺</div>
+              <div class="red">Total Customers 🧑</div>
+              <div class="orange">Total Orders 🤝</div>
+            </div>
+          </div>
+
+          <div class="purchase-section">
+            <h1>Purchases</h1>
+          </div>
+          <div class="sales-section">
+            <h1>Sales Section</h1>
+          </div>
+
+          <div class="reports-section">
+            <h1>General Reports</h1>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
